@@ -1,0 +1,27 @@
+name: EverythingSell
+version: '${version}'
+main: com.ahmed.everythingsell.EverythingSellPlugin
+api-version: '1.13'
+author: Ahmed
+description: Lightweight, dynamic item and block selling plugin with automatic registry detection.
+softdepend:
+  - Vault
+  - LuckPerms
+
+commands:
+  sell:
+    description: Open the Everything Sell GUI
+    usage: /<command> [reload]
+    aliases:
+      - esell
+      - everythingsell
+
+permissions:
+  everythingsell.admin:
+    description: Grants access to Everything Sell administrative commands.
+    default: op
+    children:
+      everythingsell.reload: true
+  everythingsell.reload:
+    description: Allows reloading Everything Sell configuration and price files.
+    default: op

@@ -1,0 +1,97 @@
+# ==================================================
+# EVERYTHING SELL - CONFIGURATION
+# Developed by Ahmed
+# ==================================================
+
+# Confirmation GUI settings
+# If enabled, closing the sell GUI opens a confirmation screen before selling.
+# If disabled, closing the sell GUI immediately sells all valid items.
+confirmation:
+  enabled: true
+
+# Price generation and formatting settings
+prices:
+  default-sell-price: 0.0
+  currency-symbol: "$"
+
+# Vault Economy integration settings
+economy:
+  enabled: true
+
+# Runtime Minecraft registry synchronization settings
+registry:
+  auto-detect: true
+  # Excludes operator-only technical items (command blocks, barriers, structure blocks, etc.)
+  exclude-technical-materials: true
+  excluded-materials:
+    - "AIR"
+    - "CAVE_AIR"
+    - "VOID_AIR"
+    - "BARRIER"
+    - "COMMAND_BLOCK"
+    - "CHAIN_COMMAND_BLOCK"
+    - "REPEATING_COMMAND_BLOCK"
+    - "COMMAND_BLOCK_MINECART"
+    - "STRUCTURE_BLOCK"
+    - "STRUCTURE_VOID"
+    - "JIGSAW"
+    - "DEBUG_STICK"
+    - "KNOWLEDGE_BOOK"
+    - "LIGHT"
+    - "BEDROCK"
+
+# On-screen Title and Subtitle displayed after a successful sell transaction
+# Available placeholders: {icon}, {amount}, {currency}, {total}, {items}
+sell-result:
+  enabled: true
+  title: "&fᴠɪᴇᴡ sᴇʟʟ"
+  subtitle: "{icon} {amount} &fsᴇʟᴅ"
+  icon: "✓"
+  icon-color: "#55FF55"
+  amount-color: "#55FF55"
+  fade-in: 10
+  stay: 40
+  fade-out: 10
+
+# Configurable sound effects
+# Sound names are validated against the running server version.
+sounds:
+  gui-open:
+    enabled: true
+    sound: "BLOCK_CHEST_OPEN"
+    volume: 1.0
+    pitch: 1.0
+
+  sell-success:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.0
+    pitch: 1.0
+
+  confirmation-open:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 1.0
+    pitch: 1.0
+
+  confirm:
+    enabled: true
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 1.0
+    pitch: 1.0
+
+  cancel:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_BASS"
+    volume: 1.0
+    pitch: 1.0
+
+  error:
+    enabled: true
+    sound: "ENTITY_VILLAGER_NO"
+    volume: 1.0
+    pitch: 1.0
+
+# Enable detailed diagnostic logging in console
+debug:
+  enabled: false

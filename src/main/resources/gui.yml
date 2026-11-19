@@ -1,0 +1,66 @@
+# ==================================================
+# EVERYTHING SELL - GUI CONFIGURATION
+# Developed by Ahmed
+# ==================================================
+
+sell-gui:
+  title: "&8ᴇᴠᴇʀʏᴛʜɪɴɢ sᴇʟʟ"
+  size: 54
+  # Bottom navigation bar filler slots (leave empty [] if you want all 54 slots for items)
+  filler:
+    enabled: true
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+    slots: [45, 46, 47, 48, 50, 51, 52, 53]
+  # Center action & live summary button
+  sell-button:
+    enabled: true
+    slot: 49
+    material: "EMERALD"
+    name: "&#55FF55sᴇʟʟ ɪᴛᴇᴍs"
+    lore:
+      - "&7ᴘʟᴀᴄᴇ ɪᴛᴇᴍs ɪɴ ᴛʜᴇ sʟᴏᴛs ᴀʙᴏᴠᴇ"
+      - ""
+      - "&fɪᴛᴇᴍs: &#55FF55{items}"
+      - "&fᴠᴀʟᴜᴇ: &#55FF55{amount}"
+      - ""
+      - "&eᴄʟɪᴄᴋ ᴏʀ ᴄʟᴏsᴇ ᴛᴏ sᴇʟʟ"
+
+confirmation-gui:
+  title: "&8ᴄᴏɴғɪʀᴍ sᴇʟʟ"
+  size: 27
+  filler:
+    enabled: true
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+  confirm-button:
+    slots: [11]
+    material: "LIME_TERRACOTTA"
+    name: "&#55FF55ᴄᴏɴғɪʀᴍ sᴇʟʟ"
+    lore:
+      - "&7sᴇʟʟ ᴀʟʟ ᴘʟᴀᴄᴇᴅ ɪᴛᴇᴍs"
+      - ""
+      - "&fɪᴛᴇᴍs: &#55FF55{items}"
+      - "&fᴛᴏᴛᴀʟ: &#55FF55{amount}"
+      - ""
+      - "&#55FF55✓ ᴄʟɪᴄᴋ ᴛᴏ ᴄᴏɴғɪʀᴍ"
+  summary-item:
+    enabled: true
+    slot: 13
+    material: "GOLD_INGOT"
+    name: "&fsᴇʟʟ sᴜᴍᴍᴀʀʏ"
+    lore:
+      - "&7ʀᴇᴠɪᴇᴡ ʏᴏᴜʀ sᴀʟᴇ"
+      - ""
+      - "&fsᴇʟʟᴀʙʟᴇ ɪᴛᴇᴍs: &#55FF55{items}"
+      - "&fᴛᴏᴛᴀʟ ᴘᴀʏᴏᴜᴛ: &#55FF55{amount}"
+  cancel-button:
+    slots: [15]
+    material: "RED_TERRACOTTA"
+    name: "&cᴄᴀɴᴄᴇʟ"
+    lore:
+      - "&7ᴄᴀɴᴄᴇʟ ᴛʜɪs ᴛʀᴀɴsᴀᴄᴛɪᴏɴ"
+      - "&7ᴀɴᴅ ʀᴇᴛᴜʀɴ ᴀʟʟ ɪᴛᴇᴍs."
+      - ""
+      - "&c✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄᴀɴᴄᴇʟ"

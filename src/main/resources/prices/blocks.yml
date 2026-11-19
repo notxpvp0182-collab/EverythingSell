@@ -1,0 +1,23 @@
+# ==================================================
+# EVERYTHING SELL - BLOCK PRICES
+# Automatically synchronized with the server registry.
+# Existing prices are preserved across restarts and reloads.
+# ==================================================
+
+blocks:
+  stone:
+    sell-price: 1.0
+  dirt:
+    sell-price: 0.5
+  cobblestone:
+    sell-price: 0.75
+  oak_log:
+    sell-price: 2.0
+  iron_block:
+    sell-price: 50.0
+  gold_block:
+    sell-price: 100.0
+  emerald_block:
+    sell-price: 675.0
+  diamond_block:
+    sell-price: 500.0

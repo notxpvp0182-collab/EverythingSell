@@ -1,0 +1,43 @@
+name: Build EverythingSell
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build with Java ${{ matrix.java }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        java: [ '21', '25' ]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.java }}
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14'
+
+      - name: Build and Test Plugin
+        run: gradle clean build --no-daemon
+
+      - name: Upload EverythingSell.jar Artifact
+        if: matrix.java == '21'
+        uses: actions/upload-artifact@v4
+        with:
+          name: EverythingSell
+          path: build/libs/EverythingSell.jar
+          if-no-files-found: error

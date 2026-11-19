@@ -1,0 +1,20 @@
+# ==================================================
+# EVERYTHING SELL - COMMANDS
+# Developed by Ahmed
+# ==================================================
+
+# Primary command used to open the Everything Sell GUI.
+# Normal players do NOT need any permission to run this command.
+command: "sell"
+
+# Additional aliases that also open the Everything Sell GUI.
+aliases:
+  - "esell"
+  - "everythingsell"
+
+# Subcommand for administrators to reload configuration & prices.
+# Requires permission: everythingsell.reload or everythingsell.admin
+reload-argument: "reload"
+
+# Command description
+description: "Open the Everything Sell GUI"

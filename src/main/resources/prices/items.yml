@@ -1,0 +1,23 @@
+# ==================================================
+# EVERYTHING SELL - ITEM PRICES
+# Automatically synchronized with the server registry.
+# Existing prices are preserved across restarts and reloads.
+# ==================================================
+
+items:
+  diamond:
+    sell-price: 50.0
+  emerald:
+    sell-price: 75.0
+  iron_ingot:
+    sell-price: 5.0
+  gold_ingot:
+    sell-price: 10.0
+  apple:
+    sell-price: 2.0
+  coal:
+    sell-price: 1.5
+  redstone:
+    sell-price: 1.0
+  lapis_lazuli:
+    sell-price: 1.5
