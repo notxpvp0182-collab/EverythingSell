@@ -12,7 +12,7 @@ jobs:
     name: Build with Java ${{ matrix.java }}
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         java: [ '21', '25' ]
 
@@ -29,7 +29,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.14'
+          gradle-version: '9.2.1'
 
       - name: Build and Test Plugin
         run: gradle clean build --no-daemon
